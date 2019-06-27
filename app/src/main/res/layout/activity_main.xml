@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#dddddd"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+  <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A9A9A9"
+        android:text="FORCES IN UK"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+  <ListView
+      android:id="@+id/listview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="29dp"
+      android:divider="@null"
+      android:dividerHeight="0dp"
+
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/heading"
+      app:layout_constraintVertical_bias="0.852">
+
+  </ListView>
+
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/floatingbtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|end"
+      android:layout_margin="16dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="24dp"
+      android:onClick="openDialog"
+      android:src="@drawable/search_force"
+      app:backgroundTint="#ffffff"
+      app:fabSize="normal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.949"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.979" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/crime_finder"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+
+      android:layout_margin="16dp"
+      android:src="@drawable/crime_at_location"
+      app:backgroundTint="#ffffff"
+      app:fabSize="normal"
+      app:layout_constraintBottom_toTopOf="@+id/floatingbtn"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.946"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0" />
+
+
+   <!-- <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FORCES"
+            android:textColor="#000000"/>
+    </android.support.v4.widget.NestedScrollView>
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
